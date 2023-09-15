@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Oswald&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width:100%;
+    height:100vh;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container::before{
+    content:"";
+    width: 100%;
+    height: 100%;
+    background-image: url(cool-background.png);
+    opacity: 0.4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    background-position: center ;
+}
+.weather{
+    z-index: 2;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+.weather1{
+    font-size: 4rem;
+}
+.weather p{
+    font-size: 2rem;
+}
+.weather span{
+    font-size: 1rem;
+} 
+.weather3 span{
+    margin:0.3rem;
+}
+nav{
+    height: 100px;
+    box-shadow:0 0 25px rgba(0,0,0,0.18) ;
+    position:absolute;
+    padding:1rem 0;
+    bottom:0%; 
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+nav form{
+    width:70%;
+    display:grid;
+    grid-template-columns: 5fr 1fr;
+}
+#search{
+    font-size: 1.1rem;
+    outline:none; 
+    color:white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 1rem 0;
+    width:98%;
+}
+nav form button{
+    background-color: rgb(62, 165, 108);
+    border: none;
+    border-radius: 0 25px 25px 0;
+    font-size: 1.1rem;
+    color: white;
+    cursor:pointer; 
+}
